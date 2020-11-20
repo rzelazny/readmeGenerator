@@ -124,7 +124,7 @@ ${response.collaboratorsText}
 
 ## License
 
-${response.licenseText}
+This repo is licenced under the ${response.license} license.
 
 ## Contributing
 
@@ -133,7 +133,11 @@ ${response.contributeText}
 ## Tests
 
 ${response.tests}
-    `
+
+## Questions
+
+Please send any questions to my email: <${response.email}>
+`
     return(markdownString)
 }
 
