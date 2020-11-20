@@ -5,7 +5,7 @@ const util = require ("util");
 const writeFileAsync = util.promisify(fs.writeFile);
 
 //ask user for user input
-const promptUSer = () => {
+const promptUser = () => {
     inquirer.prompt([{
         type: "input",
         message: "What's is your name?",
@@ -42,13 +42,45 @@ const promptUSer = () => {
 //generate markdown string from user input 
 function generateMarkdown(response) {
     let markdownString = `
-    # 
+    # ${projectName}
 
-    ##
+## Description 
 
-    ###
+${description}
+
+## Table of Contents
+
+* [Installation](#installation)
+* [Usage](#usage)
+* [Credits](#credits)
+* [License](#license)
+
+
+## Installation
+
+${installation}
+
+## Usage 
+
+USAGE IMG
+
+## Credits
+
+${collaborators}
+
+## License
+
+${license}
+
+## Contributing
+
+${contribute}
+
+## Tests
+
+${tests}
     `
     return(markdownString)
 }
 
-promptUSer();
+promptUser();
