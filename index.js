@@ -58,6 +58,11 @@ const promptUser = () => {
         message: "How can people contribute to the project?",
         name: "contributeText"
     },
+    {
+        type: "input",
+        message: "Who has contributed to the success of this project so far?",
+        name: "creditsText"
+    },
     //{
     //     type: "list",
     //     message: "Should the Readme have a table of contents?",
@@ -98,8 +103,8 @@ const promptUser = () => {
 }
 //generate markdown string from user input 
 function generateMarkdown(response) {
-    let markdownString = `
-#${response.projectName}
+    let markdownString = 
+`# ${response.projectName}
 
 ## Description 
 
@@ -111,6 +116,9 @@ ${response.descriptionText}
 * [Usage](#usage)
 * [Credits](#credits)
 * [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
 
 
 ## Installation
@@ -137,7 +145,7 @@ ${response.contributeText}
 
 ## Tests
 
-${response.tests}
+${response.testsText}
 
 ## Questions
 
