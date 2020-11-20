@@ -20,6 +20,11 @@ const promptUser = () => {
     },
     {
         type: "input",
+        message: "What repo is this Readme for?",
+        name: "githubRepo"
+    },
+    {
+        type: "input",
         message: "What's is your project's name?",
         name: "projectName"
     },
@@ -37,6 +42,11 @@ const promptUser = () => {
         type: "input",
         message: "What's is your project's usage guide?",
         name: "usageText"
+    },
+    {
+        type: "input",
+        message: "What's is the name of your usage image?",
+        name: "usageImg"
     },
     {
         type: "input",
@@ -84,7 +94,7 @@ const promptUser = () => {
 //generate markdown string from user input 
 function generateMarkdown(response) {
     let markdownString = `
-    # ${response.projectName}
+#${response.projectName}
 
 ## Description 
 
@@ -104,7 +114,7 @@ ${response.installationText}
 
 ## Usage 
 
-[${response.imageName}](${response.imageURL})
+![Image of ${response.usageImg}](https://github.com/${response.githubName}/${response.githubRepo}/blob/main/assets/images/${response.usageImg}.png)
 
 ${response.usageText}
 
