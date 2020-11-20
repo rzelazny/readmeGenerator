@@ -50,6 +50,11 @@ const promptUser = () => {
     },
     {
         type: "input",
+        message: "How can the code be tested?",
+        name: "testText"
+    },
+    {
+        type: "input",
         message: "How can people contribute to the project?",
         name: "contributeText"
     },
