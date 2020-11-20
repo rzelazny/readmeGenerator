@@ -42,11 +42,11 @@ const promptUser = () => {
 //generate markdown string from user input 
 function generateMarkdown(response) {
     let markdownString = `
-    # ${projectName}
+    # ${response.projectName}
 
 ## Description 
 
-${description}
+${response.descriptionText}
 
 ## Table of Contents
 
@@ -58,27 +58,29 @@ ${description}
 
 ## Installation
 
-${installation}
+${response.installationText}
 
 ## Usage 
 
-USAGE IMG
+[${response.imageName}](${response.imageURL})
+
+${response.usageText}
 
 ## Credits
 
-${collaborators}
+${response.collaboratorsText}
 
 ## License
 
-${license}
+${response.licenseText}
 
 ## Contributing
 
-${contribute}
+${response.contributeText}
 
 ## Tests
 
-${tests}
+${response.tests}
     `
     return(markdownString)
 }
