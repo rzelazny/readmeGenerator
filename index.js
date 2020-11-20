@@ -133,7 +133,7 @@ ${response.usageText}
 
 ## Credits
 
-${response.collaboratorsText}
+${response.creditsText}
 
 ## License
 
@@ -145,7 +145,7 @@ ${response.contributeText}
 
 ## Tests
 
-${response.testsText}
+${response.testText}
 
 ## Questions
 
