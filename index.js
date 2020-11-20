@@ -4,29 +4,71 @@ const util = require ("util");
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
+//Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
+
 //ask user for user input
 const promptUser = () => {
     inquirer.prompt([{
         type: "input",
-        message: "What's is your name?",
-        name: "name"
+        message: "What is your GitHub user name?",
+        name: "githubName"
     },
     {
         type: "input",
-        message: "Where are you from?",
-        name: "location"
+        message: "What is your email address?",
+        name: "email"
     },
     {
         type: "input",
-        message: "What's is your GitHub username?",
-        name: "gitHubName"
+        message: "What's is your project's name?",
+        name: "projectName"
     },
+    {
+        type: "input",
+        message: "What's is your project's description?",
+        name: "descriptionText"
+    },
+    {
+        type: "input",
+        message: "What's is your project's installation instructions?",
+        name: "installationText"
+    },
+    {
+        type: "input",
+        message: "What's is your project's usage guide?",
+        name: "usageText"
+    },
+    {
+        type: "input",
+        message: "How can people contribute to the project?",
+        name: "contributeText"
+    },
+    //{
+    //     type: "list",
+    //     message: "Should the Readme have a table of contents?",
+    //     choices:[
+    //         "Yes",
+    //         "No"
+    //     ],
+    //     name: "tableOfContentsYN"
+    // },
     {
         type: "list",
-        message: "What's is your GitHub license?",
+        message: "Which license does the project utilize?",
         choices:[
+            "Apache",
+            "GNU General Public",
             "MIT",
-            "Apache"
+            "BSD 2-Clause Simplified",
+            "BSD 3-Clause Revised",
+            "Boost Software",
+            "Creative Commons Zero 1.0",
+            "Eclipse Public,",
+            "GNU Affero General Public",
+            "GNU General Public",
+            "GNU Lesser General Public",
+            "Mozilla Public",
+            "The Unilicense"
         ],
         name: "license"
     }
