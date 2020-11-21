@@ -105,6 +105,7 @@ const promptUser = () => {
 function generateMarkdown(response) {
     let markdownString = 
 `# ${response.projectName}
+![Badge license ${response.license}](https://img.shields.io/badge/license-${response.license}-green)
 
 ## Description 
 
