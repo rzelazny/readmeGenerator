@@ -2,7 +2,7 @@
 
 ## Description 
 
-This project uses a CLI to gather info and generate a complete markdown Readme file that is saved locally as README.md.
+This project uses a CLI to gather info and generate a markdown Readme file that is saved locally as README.md.
 
 ## Table of Contents
 

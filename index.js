@@ -114,9 +114,9 @@ ${response.descriptionText}
 
 * [Installation](#installation)
 * [Usage](#usage)
-* [Credits](#credits)
 * [License](#license)
 * [Contributing](#contributing)
+* [Credits](#credits)
 * [Tests](#tests)
 * [Questions](#questions)
 
@@ -131,10 +131,6 @@ ${response.installationText}
 
 ${response.usageText}
 
-## Credits
-
-${response.creditsText}
-
 ## License
 
 This repo is licenced under the ${response.license} license.
@@ -146,6 +142,10 @@ ${response.contributeText}
 ## Tests
 
 ${response.testText}
+
+## Credits
+
+${response.creditsText}
 
 ## Questions
 
