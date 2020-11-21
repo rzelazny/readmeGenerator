@@ -1,4 +1,5 @@
 # Readme Generator
+![Badge license MIT](https://img.shields.io/badge/license-MIT-green)
 
 ## Description 
 
@@ -8,9 +9,9 @@ This project uses a CLI to gather info and generate a markdown Readme file that 
 
 * [Installation](#installation)
 * [Usage](#usage)
-* [Credits](#credits)
 * [License](#license)
 * [Contributing](#contributing)
+* [Credits](#credits)
 * [Tests](#tests)
 * [Questions](#questions)
 
@@ -25,10 +26,6 @@ Requires installation of node.js and the inquirer package.
 
 Run the code via the terminal with command: node index
 
-## Credits
-
-Assistance has been provided by the Rutgers Coding Bootcamp.
-
 ## License
 
 This repo is licenced under the MIT license.
@@ -40,6 +37,10 @@ Anyone is free to fork their own version of the repo.
 ## Tests
 
 There are currently no tests for this project.
+
+## Credits
+
+Assistance has been provided by the Rutgers Coding Bootcamp.
 
 ## Questions
 
