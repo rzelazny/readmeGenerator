@@ -4,8 +4,6 @@ const util = require ("util");
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
-//Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
-
 //ask user for user input
 const promptUser = () => {
     inquirer.prompt([{
@@ -49,30 +47,6 @@ const promptUser = () => {
         name: "usageImg"
     },
     {
-        type: "input",
-        message: "How can the code be tested?",
-        name: "testText"
-    },
-    {
-        type: "input",
-        message: "How can people contribute to the project?",
-        name: "contributeText"
-    },
-    {
-        type: "input",
-        message: "Who has contributed to the success of this project so far?",
-        name: "creditsText"
-    },
-    //{
-    //     type: "list",
-    //     message: "Should the Readme have a table of contents?",
-    //     choices:[
-    //         "Yes",
-    //         "No"
-    //     ],
-    //     name: "tableOfContentsYN"
-    // },
-    {
         type: "list",
         message: "Which license does the project utilize?",
         choices:[
@@ -91,7 +65,31 @@ const promptUser = () => {
             "The Unilicense"
         ],
         name: "license"
+    },
+    {
+        type: "input",
+        message: "How can people contribute to the project?",
+        name: "contributeText"
+    },
+    {
+        type: "input",
+        message: "Who has contributed to the success of this project so far?",
+        name: "creditsText"
+    },
+    {
+        type: "input",
+        message: "How can the code be tested?",
+        name: "testText"
     }
+    //{
+    //     type: "list",
+    //     message: "Should the Readme have a table of contents?",
+    //     choices:[
+    //         "Yes",
+    //         "No"
+    //     ],
+    //     name: "tableOfContentsYN"
+    // }
     ]).then (function(response) {
         console.log(response);
         let markdown = generateMarkdown(response);
@@ -155,4 +153,5 @@ Please send any questions to my email: <${response.email}>
     return(markdownString)
 }
 
+//always run the user prompt
 promptUser();
