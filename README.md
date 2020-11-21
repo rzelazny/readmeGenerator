@@ -2,7 +2,7 @@
 
 ## Description 
 
-This project uses a CLI to gather info and generate a markup Readme file that is saved locally as README.md.
+This project uses a CLI to gather info and generate a complete markdown Readme file that is saved locally as README.md.
 
 ## Table of Contents
 
@@ -17,13 +17,13 @@ This project uses a CLI to gather info and generate a markup Readme file that is
 
 ## Installation
 
-Install node.js, and the inquirer package.
+Requires installation of node.js and the inquirer package.
 
 ## Usage 
 
 ![Image of readmeGenerator](https://github.com/rzelazny/readmeGenerator/blob/main/assets/images/readmeGenerator.png)
 
-Run the code via the terminal with command node index.
+Run the code via the terminal with command: node index
 
 ## Credits
 
