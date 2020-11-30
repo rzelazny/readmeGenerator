@@ -26,7 +26,7 @@ Requires installation of node.js and the inquirer package.
 
 Run the code via the terminal with command: node index
 
-![Demonstration video](https://drive.google.com/file/d/1a9sWS7fDmnqbeAcZimeHvmBSwvH9-EZA/view?usp=sharing)
+[Demonstration video](https://drive.google.com/file/d/1a9sWS7fDmnqbeAcZimeHvmBSwvH9-EZA/view?usp=sharing)
 
 ## License
 
